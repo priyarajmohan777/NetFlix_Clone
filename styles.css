@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  overflow-y: scroll;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141414;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  border-bottom: 2px solid red;
+  padding-bottom: 2px;
+}
+
+.thumbnail {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 75vh;
+  background-image: url(thumbnail1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.thumbnail::before {
+  content:"";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 25%, transparent 75%);
+  z-index: 1;
+}
+
+.thumbnail-text {
+  position: relative;
+  margin-left: 60px;
+  z-index: 2;
+}
+
+.thumbnail-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.thumbnail-text h4 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ccc;
+}
+
+.buttons
+{
+    display:flex;
+    justify-content: flex-start;
+    gap:20px;
+
+}
+
+.b
+{
+    border:2px white;
+    border-radius:8px;
+    padding: 20px;
+    
+    
+}
+
+
+.show-cards
+{
+    display:flex;
+    justify-content:space-between;
+    margin-top:30px;
+    margin-left:30px;
+    margin-bottom:30px;
+    overflow-x:scroll;
+    
+}
+
+.card{
+    background-color: white;
+    border: 5px solid white;
+    border-radius:8px;
+    width:30vh;
+    margin-right:20px;
+    margin-bottom:40px;
+    
+
+}
+
+.cards-container
+{
+    padding:20px;
+}
+
+img
+{
+    height:40vh;
+    padding:20px;
+}
+
+h3{
+    color:black;
+    font-weight:bold;
+    text-align:center;
+}
