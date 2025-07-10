@@ -141,7 +141,6 @@ nav {
   align-items: center;
   background-color: #141414;
   padding: 15px 30px;
-  position: sticky;
   top: 0;
   z-index: 1000;
 }
@@ -163,7 +162,6 @@ nav {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  transition: all 0.3s ease;
 }
 
 .nav-links li a:hover {
@@ -185,18 +183,16 @@ nav {
 .thumbnail::before {
   content:"";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 25%, transparent 75%);
-  z-index: 1;
+  
 }
 
 .thumbnail-text {
   position: relative;
   margin-left: 60px;
-  z-index: 2;
+  
 }
 
 .thumbnail-text h1 {
